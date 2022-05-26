@@ -2,6 +2,7 @@ package com.bridgelabz.appium.test;
 
 import com.bridgelabz.appium.base.Base;
 import com.bridgelabz.appium.pages.Calc;
+import com.bridgelabz.appium.pages.Login;
 import org.testng.annotations.Test;
 
 public class CalcTest extends Base {
@@ -10,6 +11,7 @@ public class CalcTest extends Base {
     public void additionOperation() throws InterruptedException {
         Calc cal = new Calc(driver);
         cal.add();
+        cal.sub();
     }
 }
 
