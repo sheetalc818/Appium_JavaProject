@@ -9,6 +9,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+//http://appium.io/docs/en/writing-running-appium/tutorial/swipe/android-layout-direction/
+
 public class Flipkart1 {
     public static AndroidDriver driver;
 
