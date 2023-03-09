@@ -34,7 +34,7 @@ public class Flipkart1 {
     public static void scroll(){
         ((AndroidDriver<MobileElement>) driver).findElementByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true)).setAsVerticalList()" +
-                        ".scrollIntoView(new UiSelector().text(\"Malayalam\"))").click();
+                        ".scrollIntoView(new UiSelector().text(\"English\"))").click();
 
         driver.findElement(By.id("com.flipkart.android:id/select_btn")).click();
         //*[@text='Malayalam' and @id='com.flipkart.android:id/iv_checkbox']
