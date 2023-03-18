@@ -1,17 +1,13 @@
 package com.bridgelabz.appium.test;
 
-import com.bridgelabz.appium.base.Base;
-import com.bridgelabz.appium.pages.Calc;
-import com.bridgelabz.appium.pages.Login;
+import com.bridgelabz.appium.base.BaseClass;
+import com.bridgelabz.appium.operation.CalcOperation;
 import org.testng.annotations.Test;
 
-public class CalcTest extends Base {
-
-    @Test(priority=0, description="Doing Calc operations")
-    public void additionOperation() throws InterruptedException {
-        Calc cal = new Calc(driver);
-        cal.add();
-        cal.sub();
+public class CalcTest extends BaseClass {
+    @Test
+    public void performOperationsOnCalc(){
+        CalcOperation calc = new CalcOperation(driver);
+        calc.operationOnOnCalculator();
     }
 }
-
